@@ -1,0 +1,230 @@
+.plc-admin-reservationslist-container {
+  min-height: 90vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.plc-admin-card-user-reservation-list{
+  width: 1250px;
+  height: 265px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: flex;
+}
+
+.plc-admin-card-header-text{
+  background-color: #f0643d/* var(--primary) */;
+  color: var(--white); /* color4 */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  border-top-right-radius: 10px;
+
+}
+
+.plc-admin-card-price-container{
+  display: flex;
+}
+
+.plc-admin-price-amount{
+  padding-left: 15px;
+  font-size: 1.3rem;
+}
+
+.plc-admin-price-text{
+  font-size: 0.9rem;
+  align-self: flex-end;
+}
+
+.plc-admin-name-reservation-location{
+  color: var(--color4); /* color4 */
+  font-size: 0.7rem;
+}
+
+.plc-admin-hr-bottom{
+  width: 96%;
+  margin-left: 2%;
+  color: rgba(0,0,0,0.2);
+}
+
+.plc-admin-reservation-img{
+  object-fit: cover;
+}
+
+.plc-admin-bottom-card-reservation{
+  width: 96%;
+  height: 25%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plc-admin-category-reservation-card{
+  font-size: 1.2rem;
+}
+
+.plc-admin-name-reservation-card{
+  font-size: 1.2rem;
+}
+
+.plc-admin-div-split-text{
+  display: block;
+  background-color: rgba(255,255,255,0.4);
+  width: 1px;
+  height: 65%;
+  margin: 0px 10px 0px 60px;
+}
+
+.plc-admin-reservation-card-info{
+  width: 97%;
+  height: 47%;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.plc-admin-reservation-card-info-top{
+  display: flex;
+}
+
+.plc-admin-card-resevation-list-container-text{
+  width: 100%;
+}
+
+.plc-admin-product-link-button{
+  background: var(--color2);
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 350px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  justify-self: center;
+  cursor: pointer;
+}
+.plc-admin-card-price-container{
+  display: flex;
+}
+
+.plc-price-amount{
+  padding-left: 15px;
+  font-size: 1.3rem;
+}
+
+.plc-admin-link-container{
+  display: flex;
+  justify-content:  space-around;
+  width: 100%;
+}
+
+.plc-admin-card-reservations p, .plc-admin-reservation-card-info-mail{
+  padding: 3px;
+}
+
+
+
+.plc-admin-reservation-card-info span{
+  color: var(--primary);
+}
+
+.plc-admin-reservation-card-info-first-div{
+  width: 50%;
+}
+
+.plc-admin-reservation-card-info-second-div{
+  width: 50%;
+}
+
+
+@media (max-width:801px) {
+  .plc-admin-reservation-card-info{
+    font-size: 0.8rem;
+  }
+
+  .plc-admin-card-user-reservation-list{
+    width: 700px;
+  }
+
+  .plc-admin-card-resevation-list-container-text{
+    width: 100%;
+  }
+
+  .plc-admin-reservation-img{
+    display: none;
+  }
+
+  .plc-admin-product-link-button{
+    width: 250px;
+  }
+
+  .plc-admin-card-header-text{
+    border-top-left-radius: 10px;
+  }
+  .plc-admin-category-reservation-card{
+  display: none;
+  }
+}
+
+@media (max-width:475px){
+  .plc-admin-card-user-reservation-list{
+    width: 95%;
+    height: 400px;
+  }
+
+  .plc-admin-second-split-text{
+    display: none;
+  }
+
+  .plc-admin-card-header-text{
+    height: auto;
+    padding: 10px 5px;
+    justify-content: space-between;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .plc-admin-name-reservation-card{
+    font-size: 1rem;
+  }
+
+  .plc-admin-reservation-card-info-top{
+    flex-direction: column;
+  }
+
+  .plc-admin-reservation-card-info-second-div,.plc-admin-reservation-card-info-first-div{
+    width: 100%;
+  }
+
+  .plc-admin-reservation-card-info{
+    font-size: 0.9rem;
+    height: 255px;
+  }
+
+  .plc-admin-bottom-card-reservation{
+    height: 100px;
+  }
+  
+  .plc-admin-bottom-card-reservation{
+    height: 60px;
+  }
+
+  .plc-admin-product-link-button{
+    width: 150px;
+  }
+
+}

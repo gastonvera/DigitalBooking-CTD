@@ -1,0 +1,30 @@
+.gv-container-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+  }
+  
+  .unc-icons-user {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .unc-icons-user p{
+    font-size: 1rem;
+  }
+  
+  .gv-info p {
+    color: var(--white);
+  }
+  .gv-info span {
+    color: var(--color2);
+  }

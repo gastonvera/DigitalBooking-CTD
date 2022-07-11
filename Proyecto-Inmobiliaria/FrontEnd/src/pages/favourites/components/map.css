@@ -1,0 +1,22 @@
+.plc-map-container{
+  width: 50%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: fixed;
+  right: 1.8%;
+  
+}
+
+@media (max-width: 1750px) {
+  .plc-map-container{
+    width: 45%;
+    
+  }
+}
+
+@media (max-width: 1300px) {
+  .plc-map-container{
+    display: none;
+  }
+}

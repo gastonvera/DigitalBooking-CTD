@@ -1,0 +1,125 @@
+.plc-card-reservation-container-component{
+  background-color: white;
+  border: 1px solid #DFE4EA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.plc-card-reservation-title{
+  padding: 18px 0px 18px 21px;
+}
+
+.plc-img-reservation-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.plc-name-price-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plc-name-price-container p{
+  font-size: 1.2rem;
+}
+
+.plc-name-price-container p span{
+  font-size: 0.8rem;
+}
+
+.plc-img-reservation-container{
+  width: 100%;
+  height: 300px;
+}
+
+.plc-card-direction-container{
+  display: flex;
+  gap: 8px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.plc-info-card-container{
+  width: 95%; 
+  padding-left: 5%;
+  padding-top: 40px;
+}
+
+.plc-card-reservation-container-component hr{
+  border: 1px solid #BEBEBE;
+}
+
+.plc-confirm-booking-button{
+  background: var(--primary);
+  border-radius: 0.3rem;
+  border: 1px solid var(--color4);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.plc-check-date-reservation-card{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+@media (min-width: 1600px) {
+  .plc-img-reservation-container{
+    height: 400px;
+  }
+}
+
+@media (max-width:850px) and (min-width:601px){
+  .plc-card-reservation-container-component{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .plc-card-direction-container{
+    padding-bottom: 20px;
+  }
+
+  .plc-card-reservation-title-img-container{
+    width: 45%;
+  }
+
+  .plc-img-reservation-container{
+    height: 83%;
+    padding-left: 10px;
+  }
+
+  .plc-img-reservation-container img{
+    border: 1px solid #DFE4EA;
+    border-radius: 5px;
+    
+  }
+
+  .plc-card-reservation-title{
+    padding: 18px 0px 5px 10px;
+  }
+
+  .plc-info-card-container{
+    width: 50%;
+    padding-left: 3%;
+    padding-top: 50px;
+  }
+
+  .plc-check-date-reservation-card{
+    padding: 15px;
+  }
+
+  .plc-confir-booking-button{
+    margin-top: 25px;
+  }
+}

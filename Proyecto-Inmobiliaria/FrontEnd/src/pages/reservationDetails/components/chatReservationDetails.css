@@ -1,0 +1,199 @@
+.plc-chat-details-container{
+  width: 698px;
+  height: 590px;
+  position: fixed;
+  top: 110;
+  right: 120px;
+}
+
+.plc-chat-details-container form{
+  background-color: var(--color4);
+  height: 120px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.plc-chat-details-container button{
+  width: 120px;
+  height: 40px;
+  align-self: center;
+  margin-left: 15px;
+  background: var(--primary);
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.plc-chat-details-container textarea{
+  resize: none;
+  margin: 20px 0px 20px 30px;
+  
+}
+
+.plc-text-info-chat-container{
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.plc-text-info-chat-container div{
+  height: 1px;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.plc-text-info-chat-container p{
+  width: 270px;
+}
+
+.plc-chat-history-container{
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 410px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.2);
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  box-shadow: 1px 1px 5px #555 inset;
+}
+
+.plc-chat-comment{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.2);
+}
+
+.plc-chat-comment-user{
+  align-self: flex-start;
+  background-color: #dd6442;
+  color: white;
+}
+
+
+.plc-chat-comment-admin{
+  align-self: flex-end;
+  background-color: var(--color4);
+}
+
+
+.plc-chat-time-admin{
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.7rem;
+}
+
+.plc-chat-body-user, .plc-chat-comment-admin{
+  inline-size: 520px;
+  overflow-wrap: break-word;
+}
+
+.plc-chat-time-user{
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+}
+
+.plc-comment-user-container{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.plc-comment-admin-container{
+  display: flex;
+  
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.plc-chat-name-display{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width:1650px){
+  .plc-chat-details-container{
+    right: 14vw;
+  }
+}
+
+@media (max-width:1320px){
+  .plc-chat-details-container{
+    width: 340px;
+    right: 3%;
+  }
+
+  .plc-div-background-chat-space{
+    width: 340px
+  }
+
+  .plc-chat-details-container textarea{
+    width: 300px;
+ 
+    margin: 20px;
+  }
+  
+  .plc-chat-details-container form{
+    flex-direction: column;
+    height: 180px;
+  }
+
+  .plc-chat-body-user, .plc-chat-comment-admin{
+    inline-size: 230px;
+    overflow-wrap: break-word;
+  }
+
+  .plc-chat-details-container button{
+    align-self: flex-end;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .plc-chat-history-container{
+    height: 590px;
+  }
+
+  .plc-text-info-chat-container p{
+    width: 150px;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width:740px){
+ 
+  .plc-reservation-details-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plc-div-background-chat-space{
+    display: none;
+  }
+  
+  .plc-chat-details-container{
+    position: inherit;
+  }
+
+  .plc-chat-details-container{
+    height: auto;
+  }
+
+  
+}
+
+
+
+

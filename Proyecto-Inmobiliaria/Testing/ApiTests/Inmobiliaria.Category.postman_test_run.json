@@ -1,0 +1,173 @@
+{
+	"id": "6fc7e14f-1bf7-4790-9288-ebbf9edeac93",
+	"name": "Inmobiliaria",
+	"timestamp": "2022-05-26T15:15:51.943Z",
+	"collection_id": "18028635-72215e64-df71-444a-a0a2-a6680d7640b1",
+	"folder_id": "18028635-74f88769-b65c-4494-9617-74725f5de308",
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6873ae35-26ae-411a-991c-ded35554ebf3",
+			"name": "CrearCategoria",
+			"url": "http://localhost:8080/category/save",
+			"time": 550,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				550
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "895f330a-f291-4e5f-8b59-8695d006e23a",
+			"name": "BuscarCategoriaPorID",
+			"url": "http://localhost:8080/category/id/1",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2a725aea-b96e-4591-a817-eeb99c8316b5",
+			"name": "ActualizarCategoria",
+			"url": "http://localhost:8080/category/update",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				154
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6712a810-ef0e-48f0-8fb0-eaad47651b8f",
+			"name": "VerTodasLasCategorias",
+			"url": "http://localhost:8080/category/viewAll",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cb879764-0a09-4542-a10b-9b3dd6e5acb6",
+			"name": "EliminarCategoria",
+			"url": "http://localhost:8080/category/delete/1",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 968,
+	"collection": {
+		"requests": [
+			{
+				"id": "6873ae35-26ae-411a-991c-ded35554ebf3",
+				"method": "POST"
+			},
+			{
+				"id": "895f330a-f291-4e5f-8b59-8695d006e23a",
+				"method": "GET"
+			},
+			{
+				"id": "2a725aea-b96e-4591-a817-eeb99c8316b5",
+				"method": "PUT"
+			},
+			{
+				"id": "6712a810-ef0e-48f0-8fb0-eaad47651b8f",
+				"method": "GET"
+			},
+			{
+				"id": "cb879764-0a09-4542-a10b-9b3dd6e5acb6",
+				"method": "DELETE"
+			}
+		]
+	}
+}

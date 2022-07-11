@@ -1,0 +1,23 @@
+.plc-description-product-container p{
+  color: var(--color2);
+}
+
+.plc-description-product-container > div{
+  padding: 20px 50px 10px 40px;
+}
+
+.plc-description-product-container h2{
+  padding: 40px 0px 10px 40px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .plc-description-product-container > div{
+    padding: 20px 15px 10px 15px;
+  }
+  
+  .plc-description-product-container h2{
+    padding: 40px 30px 10px 20px;
+  }
+  
+} 

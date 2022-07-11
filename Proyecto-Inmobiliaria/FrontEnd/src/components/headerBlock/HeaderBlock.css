@@ -1,0 +1,40 @@
+.gv-header-block-container{
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    background: var(--primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.gv-product-title{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    margin-left: 2.5rem;
+}
+
+.gv-icon-back{
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.gv-icon-back:hover{
+    color: var(--color3);
+}
+
+@media screen and (max-width: 468px) {
+    .gv-product-title{
+        margin-left: 0.6rem;
+    }
+
+    .gv-icon-back{
+        margin-right: 0.6rem;
+    }
+}
+

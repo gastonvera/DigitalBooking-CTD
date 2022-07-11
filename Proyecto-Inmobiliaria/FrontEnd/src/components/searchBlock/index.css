@@ -1,0 +1,128 @@
+.plc-search-block {
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  .uncSearch {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 20px 0;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .plc-search-block h1 {
+    color: var(--white);
+    text-align: center;
+    padding: 25px 0;
+  }
+  
+  .plc-input-container {
+    position: relative;
+  }
+  
+  .plc-submit-search-block {
+    background-color: var(--color2);
+    border-color: var(--color2);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 9px 50px;
+    cursor: pointer;
+  }
+  
+  .plc-form-search-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    position: absolute;
+    color: var(--color2);
+    top: 10px;
+    left: 15px;
+  }
+
+  .gv-x-icon-in-city{
+    position: absolute;
+    color: var(--color2);
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .gv-x-icon-in-search{
+    position: absolute;
+    color: var(--color2);
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .plc-form-search-block input {
+      font-size: 12px;
+    }
+  
+    .plc-submit-search-block {
+      width: 120px;
+      margin-left: 8px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .plc-house-input-search-display-list {
+      width: 204px;
+    }
+  
+    .plc-input-text-search-block {
+      width: 204px;
+    }
+  
+    .inputBox {
+      width: 204px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 549px) {
+    .plc-input-container {
+      padding-bottom: 10px;
+    }
+  
+    .plc-form-search-block {
+      flex-direction: column;
+    }
+  
+    .plc-submit-search-block {
+      width: 335px;
+      margin-top: 5px;
+      margin: 0;
+    }
+  
+    .plc-house-input-search-display-list {
+      width: 335px;
+    }
+  
+    .plc-input-text-search-block {
+      width: 335px;
+      margin: 0;
+    }
+  
+    .inputBox {
+      width: 335px;
+    }
+
+    .gv-x-icon-in-city{
+      right: 10px;
+    }
+  
+  }
+  

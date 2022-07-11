@@ -1,0 +1,3814 @@
+{
+	"info": {
+		"_postman_id": "6ae9495b-fa28-4f02-a730-78364869e5c1",
+		"name": "Autorun Aws Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18014749"
+	},
+	"item": [
+		{
+			"name": "Score",
+			"item": [
+				{
+					"name": "CrearScore 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 1\r\n    },\r\n    \"score\": 3,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 2\r\n    },\r\n    \"score\": 3,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 3\r\n    },\r\n    \"score\": 3,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 4\r\n    },\r\n    \"score\": 3,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 5\r\n    },\r\n    \"score\": 3,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":1\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":2\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":3\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":4\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":6\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":7\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":8\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":9\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":10\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":11\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 12",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 12\r\n    },\r\n    \"score\": 4,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 13",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":13\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 14",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":14\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 15",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":15\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 16",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":17\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 17",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":18\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 18",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":19\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 19",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":20\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":21\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":22\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 23\r\n    },\r\n    \"score\": 4,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":24\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":25\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 25",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":26\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 26",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":27\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 27",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 28\r\n    },\r\n    \"score\": 2,\r\n    \"favorite\": true,\r\n    \"user\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 28",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":29\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 29",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":30\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 30",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":31\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":32\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":16\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerTodosScores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{jwt}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Score SIN FAV",
+			"item": [
+				{
+					"name": "CrearScore 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 1\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 1\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 2\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 2\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 3\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 3\r\n    },\r\n    \"score\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 4\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 4\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 5\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 1 Copy 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 5\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":1\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 2 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":1\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":2\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 3 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":2\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":3\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 4 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":3\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":4\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 5 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":4\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 5\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 6 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 5\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":6\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 7 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":6\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":7\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 8 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":7\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":8\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 9 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":8\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":9\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":9\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":10\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 10 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":10\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":11\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 11 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":11\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 12",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 12\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 12 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 12\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 13",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":13\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 13 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":13\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 14",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":14\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 14 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":14\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 15",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":15\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 15 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":15\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 16",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":17\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 16 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":17\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 17",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":18\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 17 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":18\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 18",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":19\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 18 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":19\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 19",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":20\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 19 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":20\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":21\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 20 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":21\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":22\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 21 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":22\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 23\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 22 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 23\r\n    },\r\n    \"score\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":24\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 23 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":24\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":25\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 24 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":25\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 25",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":26\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 25 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":26\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 26",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":27\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 26 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":27\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 27",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 28\r\n    },\r\n    \"score\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 27 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 28\r\n    },\r\n    \"score\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 28",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":29\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 28 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":29\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 29",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":30\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 29 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":30\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 30",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":31\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 30 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":31\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":32\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 31 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":32\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":16\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore 32 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":16\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerTodosScores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{jwt}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "CrearReservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 2\r\n  },\r\n  \"product\": {\r\n    \"id\": 1\r\n  },\r\n  \"startDate\": \"2022-07-07\",\r\n  \"endDate\": \"2022-07-20\",\r\n  \"name\": \"Pablo Leonel\",\r\n  \"lastName\": \"Cristaldo\",\r\n  \"email\": \"test@test.com\",\r\n  \"city\":\"Buenos Aires\",\r\n  \"checkIn\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 2\r\n  },\r\n  \"product\": {\r\n    \"id\": 23\r\n  },\r\n  \"startDate\": \"2022-07-22\",\r\n  \"endDate\": \"2022-08-10\",\r\n  \"name\": \"Pablo Leonel\",\r\n  \"lastName\": \"Cristaldo\",\r\n  \"email\": \"test@test.com\",\r\n  \"city\":\"Buenos Aires\",\r\n  \"checkIn\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 2\r\n  },\r\n  \"product\": {\r\n    \"id\": 16\r\n  },\r\n  \"startDate\": \"2022-08-07\",\r\n  \"endDate\": \"2022-08-20\",\r\n  \"name\": \"Pablo Leonel\",\r\n  \"lastName\": \"Cristaldo\",\r\n  \"email\": \"test@test.com\",\r\n  \"city\":\"Buenos Aires\",\r\n  \"checkIn\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 3\r\n  },\r\n  \"product\": {\r\n    \"id\": 24\r\n  },\r\n  \"startDate\": \"2022-07-20\",\r\n  \"endDate\": \"2022-07-22\",\r\n  \"name\": \"Pablo Leonel\",\r\n  \"lastName\": \"Cristaldo\",\r\n  \"email\": \"test@test.com\",\r\n  \"city\":\"Buenos Aires\",\r\n  \"checkIn\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 3\r\n  },\r\n  \"product\": {\r\n    \"id\": 30\r\n  },\r\n  \"startDate\": \"2022-07-08\",\r\n  \"endDate\": \"2022-08-20\",\r\n  \"name\": \"Pablo Leonel\",\r\n  \"lastName\": \"Cristaldo\",\r\n  \"email\": \"test@test.com\",\r\n  \"city\":\"Buenos Aires\",\r\n  \"checkIn\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mensaje",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 2\r\n  },\r\n  \"body\": \"Mensaje de prueba USER A\",\r\n  \"reservation\": {\r\n    \"id\": 1\r\n  },\r\n  \"isUser\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/message/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"message",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mensaje Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": 2\r\n  },\r\n  \"body\": \"Mensaje de prueba ADMIN\",\r\n  \"reservation\": {\r\n    \"id\": 1\r\n  },\r\n  \"isUser\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/message/save",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"message",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{jwt}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CrearUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pablo Leonel\",\r\n    \"lastName\": \"Cristaldo\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/auth/register",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearUser Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Gaston\",\r\n    \"lastName\": \"Vera\",\r\n    \"email\": \"test2@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/auth/register",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"jwt\", data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"test@test.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/auth/login",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "RequestUtils",
+			"item": [
+				{
+					"name": "BuscarProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"gggggggggggggggggggggggg\",\r\n    \"description\": [\r\n        \"ffff\"\r\n    ],\r\n    \"referencias\": \"22\",\r\n    \"category\": {\r\n        \"id\": 2,\r\n        \"title\": null,\r\n        \"description\": null\r\n    },\r\n    \"features\": {\r\n        \"id\": 42,\r\n        \"pool\": false,\r\n        \"grill\": false,\r\n        \"security\": false,\r\n        \"elevator\": false,\r\n        \"airConditioning\": false,\r\n        \"gym\": false,\r\n        \"laundry\": false,\r\n        \"sauna\": false,\r\n        \"suitableProfessional\": true,\r\n        \"disabledAccess\": false,\r\n        \"furnished\": false,\r\n        \"bright\": false,\r\n        \"pets\": false,\r\n        \"comercialUse\": false,\r\n        \"electricity\": false,\r\n        \"naturalGas\": false,\r\n        \"water\": false,\r\n        \"heating\": false,\r\n        \"wifi\": false\r\n    },\r\n    \"images\": [\r\n        {\r\n            \"id\": 536,\r\n            \"title\": \"gggggggggggggggggggggggg\",\r\n            \"url\": \"https://media-exp2.licdn.com/dms/image/C4E22AQEfCAQfi2IwnQ/f…8361600&v=beta&t=QIamta_IDdj7A41SLPxgQ-PaosbpTD5anszHw2XMpp8\"\r\n        },\r\n        {\r\n            \"id\": 537,\r\n            \"title\": \"gggggggggggggggggggggggg\",\r\n            \"url\": \"https://media-exp2.licdn.com/dms/image/C4E22AQEfCAQfi2IwnQ/f…8361600&v=beta&t=QIamta_IDdj7A41SLPxgQ-PaosbpTD5anszHw2XMpp8\"\r\n        },\r\n        {\r\n            \"id\": 540,\r\n            \"title\": \"gggggggggggggggggggggggg\",\r\n            \"url\": \"https://media-exp2.licdn.com/dms/image/C4E22AQEfCAQfi2IwnQ/f…8361600&v=beta&t=QIamta_IDdj7A41SLPxgQ-PaosbpTD5anszHw2XMpp8\"\r\n        },\r\n        {\r\n            \"id\": 541,\r\n            \"title\": \"gggggggggggggggggggggggg\",\r\n            \"url\": \"https://media-exp2.licdn.com/dms/image/C4E22AQEfCAQfi2IwnQ/f…8361600&v=beta&t=QIamta_IDdj7A41SLPxgQ-PaosbpTD5anszHw2XMpp8\"\r\n        },\r\n        {\r\n            \"id\": 544,\r\n            \"title\": \"gggggggggggggggggggggggg\",\r\n            \"url\": \"https://media-exp2.licdn.com/dms/image/C4E22AQEfCAQfi2IwnQ/f…8361600&v=beta&t=QIamta_IDdj7A41SLPxgQ-PaosbpTD5anszHw2XMpp8\"\r\n        }\r\n    ],\r\n    \"cities\": {\r\n        \"id\": 4,\r\n        \"name\": null,\r\n        \"province\": null,\r\n        \"country\": null\r\n    },\r\n    \"policy\": {\r\n        \"id\": 42,\r\n        \"houseRules\": [\r\n            \"ffff\"\r\n        ],\r\n        \"healthAndSecurity\": [\r\n            \"ffff\"\r\n        ],\r\n        \"cancelPolicy\": [\r\n            \"fffff\"\r\n        ]\r\n    },\r\n    \"scores\": null,\r\n    \"reservations\": null,\r\n    \"latitude\": 22,\r\n    \"longitude\": 22,\r\n    \"averageScore\": null,\r\n    \"address\": \"ggggggggg\",\r\n    \"checkInRange_list\": [\r\n        \"07:00\"\r\n    ],\r\n    \"pricePerNight\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/product/id/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"product",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarAverage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/score/average/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"average",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodosLosProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/product/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"product",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "score-user-byid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiZXhwIjoxNjU2NDk3NDYzLCJpYXQiOjE2NTY0OTAyNjN9.ConckwuJJ5VRfa2UpMfKaYXa-caZG4lgYGCTWnr-Pjw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/score/favorites/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"favorites",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarUsuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url-aws}}/auth/id/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"auth",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/user/delete/2",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"user",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pablo\",\r\n    \"description\": [\r\n        \"asdasd\"\r\n    ],\r\n    \"referencias\": \"12\",\r\n    \"category\": {\r\n        \"id\": \"4\"\r\n    },\r\n    \"features\": {\r\n        \"pool\": false,\r\n        \"grill\": false,\r\n        \"security\": false,\r\n        \"elevator\": false,\r\n        \"airConditioning\": false,\r\n        \"gym\": false,\r\n        \"laundry\": false,\r\n        \"sauna\": false,\r\n        \"suitableProfessional\": true,\r\n        \"disabledAccess\": false,\r\n        \"furnished\": false,\r\n        \"bright\": false,\r\n        \"pets\": false,\r\n        \"comercialUse\": false,\r\n        \"electricity\": false,\r\n        \"naturalGas\": false,\r\n        \"water\": false,\r\n        \"heating\": false,\r\n        \"wifi\": false\r\n    },\r\n    \"images\": [\r\n        {\r\n            \"title\": \"pablo\",\r\n            \"url\": \"https://img-bucket-inmobiliaria.s3.amazonaws.com/Fincas/finca+1/finca+1+(4).webp\"\r\n        },\r\n        {\r\n            \"title\": \"pablo\",\r\n            \"url\": \"https://img-bucket-inmobiliaria.s3.amazonaws.com/Fincas/finca+1/finca+1+(4).webp\"\r\n        },\r\n        {\r\n            \"title\": \"pablo\",\r\n            \"url\": \"https://img-bucket-inmobiliaria.s3.amazonaws.com/Fincas/finca+1/finca+1+(4).webp\"\r\n        },\r\n        {\r\n            \"title\": \"pablo\",\r\n            \"url\": \"https://img-bucket-inmobiliaria.s3.amazonaws.com/Fincas/finca+1/finca+1+(4).webp\"\r\n        },\r\n        {\r\n            \"title\": \"pablo\",\r\n            \"url\": \"https://img-bucket-inmobiliaria.s3.amazonaws.com/Fincas/finca+1/finca+1+(4).webp\"\r\n        }\r\n    ],\r\n    \"cities\": {\r\n        \"id\": \"1\"\r\n    },\r\n    \"policy\": {\r\n        \"houseRules\": [\r\n            \"asdasdas\"\r\n        ],\r\n        \"healthAndSecurity\": [\r\n            \"asdasd\"\r\n        ],\r\n        \"cancelPolicy\": [\r\n            \"asdasd\"\r\n        ]\r\n    },\r\n    \"latitude\": \"12\",\r\n    \"longitude\": \"12\",\r\n    \"checkInRange_list\": [\r\n        \"07:00\"\r\n    ],\r\n    \"address\": \"pablo\",\r\n    \"price\": \"15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/user/update",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarTodosUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/user/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"user",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar Mensaje por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/message/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"message",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Todas las Reservas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/reservation/viewAll",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Reservation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url-aws}}/reservation/delete/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarReservaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/reservation/id/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodasLasReservasByProductoId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/reservation/product/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodasLasReservasByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-aws}}/reservation/user/1",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"reservation",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update fav",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"id\": 4,\r\n    \"product\": {\r\n        \"id\": 7\r\n    },\r\n    \"favorite\": false,\r\n    \"user\": {\r\n        \"id\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-aws}}/score/update",
+							"host": [
+								"{{url-aws}}"
+							],
+							"path": [
+								"score",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

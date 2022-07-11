@@ -1,0 +1,26 @@
+.plc-header-background{
+  height: 80px;
+  width: 100%;
+}
+
+.plc-reservation-details-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+.plc-reservation-details-card-container{
+border-style: solid;
+border-width: 1px;
+border-color: rgba(0,0,0,0.2);
+}
+
+.plc-div-background-chat-space{
+  width: 700px;
+  height: 630px;
+}
+

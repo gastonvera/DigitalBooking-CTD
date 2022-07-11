@@ -1,0 +1,59 @@
+.plc-reservation-page-container {
+  background-color: #eff1f3;
+  align-self: center;
+  width: 100%;
+  min-height: 95vh;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plc-reservation-card-container {
+  padding-top: 45px;
+}
+
+@media (max-width: 1200px) {
+  .plc-reservation-forms-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  .plc-reservation-page-container {
+    flex-direction: column;
+  }
+
+  .plc-reservation-forms-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .plc-reservation-card-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .plc-reservation-page-container {
+    align-items: center;
+  }
+
+  .plc-reservation-forms-container {
+    width: 60%;
+  }
+
+  .plc-reservation-card-container {
+    width: 30%;
+  }
+
+  .plc-reservation-page-container .gv-calendar-range{
+    width: 100%;
+  }
+
+  .plc-reservation-page-container .rdrMonth{
+    width: 450px;
+  }
+}
+

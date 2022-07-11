@@ -1,0 +1,71 @@
+.plc-error404-general-container {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.plc-link-back {
+  color: var(--primary);
+  padding: 10px;
+}
+
+.plc-error404-general-container img {
+  padding-top: 5vh;
+  margin-right: 100px;
+
+}
+
+.gv-button-go-home {
+  background-color: var(--color2);
+  border-color: var(--color2);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 16px;
+  margin-left: 15px;
+  padding: 9px 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 36rem;
+  right: 20rem;
+}
+
+@media (max-width: 1000px) {
+  .plc-error404-general-container {
+    flex-direction: column;
+  }
+
+  .plc-error404-general-container img {
+    width: 500px;
+    margin-right: 0px;
+  }
+
+  .gv-error404-container {
+    padding-left: 0%;
+    padding-top: 10%;
+  }
+
+  .gv-button-go-home {
+    top: 30rem;
+    right: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .plc-error404-general-container img {
+    width: 400px;
+  }
+
+  .gv-button-go-home {
+    top: 25rem;
+    right: 7rem;
+  }
+}
+
+@media (max-height: 850px) {
+  .plc-error404-general-container {
+    padding-top: 5vh;
+  }
+
+}

@@ -1,0 +1,249 @@
+/*Estilo general container*/
+.gv-container-header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: var(--white);
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.gv-container-header-position{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/*Estilo Logo*/
+
+.header__logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.header__logo > p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 23px;
+  color: var(--color2);
+}
+
+/*Estilo de opciones del menu desplegable para movil*/
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topMenu {
+  display: none;
+}
+
+.topMenu h2 {
+  color: var(--white);
+}
+
+.bottomMenu {
+  display: none;
+}
+
+/*Estilo de botones del header para version desktop*/
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.button {
+  background: var(--white);
+  border: 1px solid;
+  border-color: var(--primary);
+  border-radius: 5px;
+}
+
+.button p {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 11px 57px 10px 57px;
+}
+
+.button p:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/*ICONO MENU PARA EL MOVIL*/
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle > span {
+  display: none;
+  width: 28px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: var(--color3);
+}
+
+.toggle > span:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.toggle,
+.toggle > span {
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle__active {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+.toggle__active > span:nth-child(2) {
+  width: 0;
+}
+
+.toggle__active > span:nth-child(1),
+.toggle__active > span:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.toggle__active > span:nth-child(1) {
+  transform: translateY(9px);
+}
+
+.toggle__active > span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
+}
+
+/*Iconos de las redes sociales*/
+.socialMediaIcons {
+  display: none;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 900px) {
+  .header__logo > p {
+    display: none;
+  }
+
+  .button > a > p {
+    padding: 11px 20px 10px 20px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+
+  .header__logo{
+    margin-left: 0;
+  }
+
+  .gv-info-desktop-size {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle > span {
+    display: block;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+
+  .topMenu {
+    display: block;
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background: var(--primary);
+  }
+
+  .gv-info-position-top-menu {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .bottomMenu {
+    height: 70vh;
+    width: 100%;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .gv-logout-message {
+    width: 100%;
+  }
+
+  .gv-close-session-menu-movil {
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+  }
+
+  .gv-close-session-menu-movil span {
+    color: var(--primary);
+  }
+
+  .gv-option-list-menu p {
+    color: var(--color2);
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .gv-option-list-menu hr {
+    width: 100%;
+  }
+
+  .gv-menu-list-header-movil {
+    width: 90%;
+    text-align: end;
+  }
+
+  .socialMediaIcons {
+    display: flex;
+  }
+
+  .gv-social-icon {
+    color: var(--color2);
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: end;
+  }
+}
+
+/*Nav interactions*/
+
+.header__active {
+  transform: translateX(0);
+}

@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "580d8281-d719-4eb7-babe-aa8fffa19686",
+		"name": "Utiles Generales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18014749"
+	},
+	"item": [
+		{
+			"name": "http://integradordh-env.eba-wszngf8d.us-east-1.elasticbeanstalk.com/product/viewAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://integradordh-env.eba-wszngf8d.us-east-1.elasticbeanstalk.com/product/viewAll",
+					"protocol": "http",
+					"host": [
+						"integradordh-env",
+						"eba-wszngf8d",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"product",
+						"viewAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,43 @@
+.gv-description-container {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gv-description-container p {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+  }
+
+  .gv-description-container p::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .gv-description-container p::-webkit-scrollbar-track {
+    border-radius: 100vh;
+  }
+  
+  .gv-description-container p::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    border-radius: 100vh;
+  }
+
+  .gv-description-container span{
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+
+  
+  @media screen and (max-width: 485px) {
+
+    .gv-description-container{
+        height: 30%;
+    }
+
+  }

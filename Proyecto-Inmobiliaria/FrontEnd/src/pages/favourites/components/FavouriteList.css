@@ -1,0 +1,38 @@
+.gv-favouritelist-container {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.plc-favourite-general-container{
+  display: flex;
+  min-height: 95vh;
+  max-height: 90vh;
+  width: 100%;
+  overflow-y: scroll
+}
+
+.plc-title-favourite{
+  font-size: 2.5rem;
+  padding: 15px;
+  margin: 15px;
+  
+}
+
+@media (max-width: 1750px) {
+  .gv-favouritelist-container {
+    width: 50%;
+}
+}
+
+@media (max-width: 1300px) {
+  .gv-favouritelist-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+}

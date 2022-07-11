@@ -1,0 +1,50 @@
+.plc-description-container-reservation {
+  width: 97%;
+  height: 47%;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+
+.plc-description-container-reservation p {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.plc-description-container-reservation p::-webkit-scrollbar {
+  width: 5px;
+}
+
+.plc-description-container-reservation p::-webkit-scrollbar-track {
+  border-radius: 100vh;
+}
+
+.plc-description-container-reservation p::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+  border-radius: 100vh;
+}
+
+.plc-description-container-reservation span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width:475px) {
+  .plc-description-container-reservation{
+    width: 95%;
+  }
+}
+
+
+/* @media screen and (max-width: 485px) {
+
+  .plc-description-container-reservation{
+      height: 30%;
+  }
+
+} */

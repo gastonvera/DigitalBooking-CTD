@@ -1,0 +1,67 @@
+.plc-personal-dates-form .plc-reservation-input-container,
+.plc-reservation-input-container-city {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.plc-personal-dates-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 270px;
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.plc-personal-dates-bottom-side,
+.plc-personal-dates-upper-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  padding-bottom: 5px;
+}
+
+.plc-personal-dates-form label {
+  padding-bottom: 5px;
+}
+
+.plc-personal-dates-form input {
+  background: rgba(223, 228, 234, 0.4);
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid var(--color4);
+}
+
+#city {
+  background-color: white;
+}
+
+@media (max-width: 1600px) {
+  .plc-personal-dates-form {
+    height: 186px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plc-personal-dates-form .plc-reservation-input-container,
+  .plc-reservation-input-container-city {
+    width: 95%;
+  }
+
+  .plc-personal-dates-bottom-side,
+  .plc-personal-dates-upper-side {
+    flex-direction: column;
+  }
+
+  .plc-personal-dates-form {
+    height: 400px;
+  }
+}

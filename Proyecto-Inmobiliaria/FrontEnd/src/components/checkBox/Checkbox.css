@@ -1,0 +1,40 @@
+.gv-checkbox-container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.gv-checkbox-container p {
+    font-size: 15px;
+}
+
+.gv-checkbox-label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.gv-checkbox-input{
+    position: absolute;
+    transform: scale(0);
+}
+
+.gv-checkbox-input:checked ~ .gv-checkbox-span{
+    transform: rotate(45deg);
+    width: 8px;
+    margin-left: 8px;
+    border-color: var(--primary);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.gv-checkbox-span{
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    transition: all 0.375s;
+}

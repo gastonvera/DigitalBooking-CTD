@@ -1,0 +1,87 @@
+.div-container-check-hour-icon{
+  display: flex;
+  gap: 5px;
+  padding-left: 23px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.span-check-circle{
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plc-check-subtitle{
+  padding-top: 26px;
+}
+
+.check-hour-template-container label{
+  padding-left: 23px;
+}
+
+.check-hour-template-container select{
+  padding-left: 10px;
+  margin-left: 23px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 40px;
+}
+
+.check-hour-template-container{
+  background-color: rgb(173, 186, 186);
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#check-in-hour::-webkit-scrollbar {
+  width: 7px;
+}
+
+#check-in-hour::-webkit-scrollbar-track {
+  border-radius: 100vh;
+}
+
+#check-in-hour::-webkit-scrollbar-thumb {
+  background-color: var(--color4);
+  border-radius: 100vh;
+}
+
+#check-in-hour{
+  width: 50%;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  #check-in-hour{
+    width: 90%;
+    margin-left: 16px;
+  }
+
+  .check-hour-template-container label{
+    padding-left: 18px;
+  }
+
+  .div-container-check-hour-icon{
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  .span-check-circle{    
+    min-width: 30px;
+  }
+}

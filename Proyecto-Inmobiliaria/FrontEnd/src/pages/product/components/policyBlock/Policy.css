@@ -1,0 +1,74 @@
+.plc-policy-container hr{
+  color: var(--primary);
+}
+
+.plc-policy-container h2{
+  padding: 40px 0px 15px 40px;
+  font-weight: 700;
+}
+
+.plc-policty-content-container{
+  padding: 30px 0px 30px 30px;
+  width: 90%;
+  text-align: left;
+  display: flex;
+}
+
+.plc-policty-content-container > div{
+  width: 30%;
+  padding: 0px 10px 0px 10px;
+  display: inline-block;
+  
+}
+
+.plc-policy-container h3{
+  font-size: 1.35rem;
+  padding: 0 0 15px 0;
+}
+
+.plc-policty-content-container li{
+  padding: 10px 0px 10px 0px;
+  color: var(--color2);
+}
+
+
+
+.plc-policty-content-container ul{
+  padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .plc-policty-content-container > div{
+    width: 50%; 
+    padding: 0px 0px 0px 10px;
+  }
+
+  .plc-policty-content-container{
+    flex-wrap: wrap;    
+    
+  }
+  
+} 
+
+@media screen and (max-width: 600px) {
+  
+  .plc-policty-content-container > div{
+    width: 95%; 
+  }
+
+  .plc-policty-content-container{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .plc-policy-container h2{
+    padding-left: 10px;
+  }
+
+  .plc-policty-content-container h3{
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  
+} 

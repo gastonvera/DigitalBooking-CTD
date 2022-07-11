@@ -1,0 +1,52 @@
+.gv-dropdownMenu-container {
+    position: absolute;
+    top: 82px;
+    width: 200px;
+    right: -70px;
+    transform: translate(-45%);
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    animation: dropdown 0.5s ease-in-out;
+}
+
+@keyframes dropdown {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 152px;
+        opacity: 1;
+    }
+}
+
+.gv-dropdownMenu-container p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.gv-dropdown-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: background 0.3s;
+    gap: 8px;
+    padding-left: 5px;
+}
+
+
+.gv-icon-dropdown-menu {
+    font-size: 20px;
+    color: var(--color2);
+}
+
+.gv-dropdown-item:hover {
+    background-color: var(--color4);
+}

@@ -1,0 +1,2312 @@
+{
+	"info": {
+		"_postman_id": "f3c6a44b-9183-498a-a393-2cf699b09170",
+		"name": "Autorun Local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18014749"
+	},
+	"item": [
+		{
+			"name": "CrearCategoriasAutomatizadas",
+			"item": [
+				{
+					"name": "CategoryHouses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Casas\",\r\n\"description\": \"Descripcion Categoria Casa\",\r\n\"urlImage\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casa.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoryDeptos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Apartamentos\",\r\n\"description\": \"Descripcion predefinida para categoria Apartamentos\",\r\n\"urlImage\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamento.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoryFincas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Fincas\",\r\n\"description\": \"Descripcion predefinida para categoria Fincas\",\r\n\"urlImage\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/rancho.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoryMansiones",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"title\": \"Mansiones\",\r\n\"description\": \"Descripcion predefinida para categoria Mansiones\",\r\n\"urlImage\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/mansion.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/category/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "CrearCiudadesAutomatizadas",
+			"item": [
+				{
+					"name": "CrearCitieAlmagro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Almagro\",\r\n\"province\": \"CABA\",\r\n\"country\": \"Argentina\",\r\n\"products\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCitieMonserrat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Monserrat\",\r\n\"province\": \"CABA\",\r\n\"country\": \"Argentina\",\r\n\"products\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCitieCancun",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Cancun\",\r\n\"province\": \"Quintana Roo\",\r\n\"country\": \"Mexico\",\r\n\"products\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCitieBariloche",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Bariloche\",\r\n\"province\": \"Río negro\",\r\n\"country\": \"Argentina\",\r\n\"products\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCitieMaracaibo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"Maracaibo\",\r\n\"province\": \"Zulia\",\r\n\"country\": \"Venezuela\",\r\n\"products\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "CrearProductsAutomatizados",
+			"item": [
+				{
+					"name": "Houses",
+					"item": [
+						{
+							"name": "HouseAlmagro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"House\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":450,\r\n  \"category\": {\r\n    \"id\": 1 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": false,\r\n    \"elevator\": false,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": false,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(1).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house2\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(3).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(10).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(4).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(5).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house2\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(6).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(7).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"house4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(8).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+1/casa1+(9).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":1\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HouseCancun",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"House\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":1522,\r\n  \"category\": {\r\n    \"id\": 1 \r\n  },\r\n  \"features\": {\r\n    \"pool\": false,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": false,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": false,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": false,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(1).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(3).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(4).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(5).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(6).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(7).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(8).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+2/casa2+(9).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":2\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HouseBariloche",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"House\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":224,\r\n  \"category\": {\r\n    \"id\": 1 \r\n  },\r\n  \"features\": {\r\n    \"pool\": false,\r\n    \"grill\": true,\r\n    \"security\": false,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": false,\r\n    \"bright\": false,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": true\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(2).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(3).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(4).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(6).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(7).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(8).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(9).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+3/casa3+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":3\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "HouseMaracaibo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"House\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":1442,\r\n  \"category\": {\r\n    \"id\": 1 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": false,\r\n    \"security\": false,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": false,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(1).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(2).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(3).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(4).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(5).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(6).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(7).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(8).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(9).jpg\"\r\n    },{\r\n      \"title\": \"house1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/casas/casa+4/casa4+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":4\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Deptos",
+					"item": [
+						{
+							"name": "DeptoAlmagro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Apartamento\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":46546,\r\n  \"category\": {\r\n    \"id\": 2 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(1).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(2).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(3).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(4).jpg\"\r\n    },\r\n    {\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(5).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(6).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(7).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(8).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(9).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+1/dpt1+(10).jpg\"\r\n    }\r\n    \r\n  ],\r\n  \"cities\": {\r\n    \"id\":1\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeptoCancun",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Apartamento\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":42421,\r\n  \"category\": {\r\n    \"id\": 2 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(1).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(2).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(3).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(4).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(5).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(6).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(7).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(8).jpg\"\r\n    }, {\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(9).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"depto2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+2/dpt2+(10).jpg\"\r\n    }\r\n    \r\n  ],\r\n  \"cities\": {\r\n    \"id\":2\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeptoBariloche",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Apartamento\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":4224,\r\n  \"category\": {\r\n    \"id\": 2 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(1).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(2).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(3).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(4).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(5).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(6).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(7).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(8).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(9).jpg\"\r\n    },{\r\n      \"title\": \"depto3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+3/dpt3+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":3\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeptoMaracaibo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Apartamento\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":142,\r\n  \"category\": {\r\n    \"id\": 2 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(1).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(2).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(3).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(4).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(5).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(6).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(7).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(8).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(9).jpg\"\r\n    },{\r\n      \"title\": \"depto4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/departamentos/depto+4/dtp4+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":4\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fincas",
+					"item": [
+						{
+							"name": "FincaAlmagro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Finca\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":75657,\r\n  \"category\": {\r\n    \"id\": 3 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(1).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(2).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(3).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(4).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(5).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(6).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(7).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(8).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(9).jpg\"\r\n    },{\r\n      \"title\": \"finca1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho/rancho+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":1\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FincaCancun",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Finca\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":14256,\r\n  \"category\": {\r\n    \"id\": 3 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"finca2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/fincatres/D_NQ_NP_2X_893627-MLA26938521529_032018-F.jpg\"\r\n    },\r\n    {\r\n      \"title\": \"finca2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/fincatres/D_NQ_NP_2X_918364-MLA26938518211_032018-F.jpg\"\r\n    },\r\n    {\r\n      \"title\": \"finca2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/fincatres/D_NQ_NP_2X_928169-MLA26938505969_032018-F.jpg\"\r\n    },\r\n    {\r\n      \"title\": \"finca2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/fincatres/D_NQ_NP_763600-MLA26950782477_032018-O.jpg\"\r\n    },\r\n    {\r\n      \"title\": \"finca2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/fincatres/D_NQ_NP_944329-MLA26950804558_032018-O.jpg\"\r\n    }\r\n    \r\n  ],\r\n  \"cities\": {\r\n    \"id\":2\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FincaBariloche",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Finca\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":4124,\r\n  \"category\": {\r\n    \"id\": 3 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(1).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(2).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(3).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(4).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(5).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(6).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(7).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(8).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(9).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":3\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FincaMaracaibo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Finca\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":\"Conjunto de referencias predefinidas para el testeo\",\r\n  \"category\": {\r\n    \"id\": 3 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(1).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(2).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(3).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(4).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(5).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(6).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(7).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(8).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(9).jpg\"\r\n    },{\r\n      \"title\": \"finca4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/ranchos/rancho+(4)/rancho4+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":4\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Mansiones",
+					"item": [
+						{
+							"name": "MansionAlmagro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Mansión\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":234234,\r\n  \"category\": {\r\n    \"id\": 4 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(1).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(2).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(3).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(4).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(5).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(6).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(7).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(8).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(9).jpg\"\r\n    },{\r\n      \"title\": \"mansion1\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+1/masion1+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":1\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MansionCancun",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Mansión\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":23441,\r\n  \"category\": {\r\n    \"id\": 4 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(1).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(2).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(3).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(4).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(5).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(6).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(7).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(8).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(9).jpg\"\r\n    },{\r\n      \"title\": \"mansion2\",\r\n      \"url\":\"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+2/mansion2+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":2\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MansionBariloche",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Mansión\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":645,\r\n  \"category\": {\r\n    \"id\": 4 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(1).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(2).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(3).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(4).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(5).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(6).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(7).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(8).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(9).jpg\"\r\n    },{\r\n      \"title\": \"mansion3\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+3/mansion3+(10).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":3\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MansionMaracaibo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Mansión\",\r\n  \"description\": [\r\n        \"Excepcional Casa de Estilo y magnifica Historia. Petit Hotel, en exclusiva ubicación de Belgrano, frente al Paseo del Angel. Exclusivo para uso diplomático / profesional / comercial. \",\r\n        \"En PB: gran hall recibidor con entrada peatonal/vehicular. Un despacho al frente, gran salón al contrafrente con salida a jardín. Dependencia de servicio. Cocina y Baño para personas con movilidad reducida. \",\r\n        \"En 1er piso: Salón al frente. Despacho exclusivo con salida a balcón de estilo con vista al 'Paseo del Ángel'. Gran salón al contrafrente. y Despacho en ubicación central. 2 baños (hombre/mujer) \",\r\n        \"En 2do piso: Un despacho. Dos habitaciones destinadas a archivo. Dos baños tipo vestuario con duchas (hombre / mujer) y Terraza Conociendo la propiedad en Detalle: \",\r\n        \"La propiedad cuenta con entrada peatonal y/o vehicular a un cómodo hall recibidor. En esta ubicación de la propiedad se aprecia una escalera de madera original en impecable estado de conservación y mantenimiento. Un gran Vitraux deja entrar la luz natural al centro del hall. En misma planta cuenta cuenta con un despacho con vista al frente, y un gran salón con salida al jardín del contrafrente. Un baño para personas con movilidad reducida. El sector de cocina cuenta con un espacio cerrado el cual ha conseguido ser un despacho adicional. \",\r\n        \"Ascendiendo al primer piso llegamos a un gran salón con muebles de categoría, vista al frente y acceso al exclusivo despacho con salida a balcón estilo clásico con vista al Paseo del Ángel. En misma planta encontramos dos baños (hombre/mujer). Un gran salón al contrafrente y un despacho en el centro de la propiedad. \",\r\n        \"Ascendiendo a la segunda planta encontramos un nuevo despacho con vista al contrafrente, dos espacios de archivo, dos baños equipados con duchas (hombre/mujer), y acceso a gran terraza orientada al frente. \"\r\n    ],\r\n  \"referencias\":124,\r\n  \"category\": {\r\n    \"id\": 4 \r\n  },\r\n  \"features\": {\r\n    \"pool\": true,\r\n    \"grill\": true,\r\n    \"security\": true,\r\n    \"elevator\": true,\r\n    \"airConditioning\": true,\r\n    \"gym\": true,\r\n    \"laundry\": true,\r\n    \"sauna\": true,\r\n    \"disabledAccess\": false,\r\n    \"furnished\": true,\r\n    \"bright\": true,\r\n    \"pets\": true,\r\n    \"comercialUse\": false,\r\n    \"electricity\": true,\r\n    \"naturalGas\": true,\r\n    \"water\": true,\r\n    \"heating\": true,\r\n    \"wifi\": false\r\n  },\r\n  \"images\": [\r\n    {\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(1).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(2).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(3).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(4).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(5).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(6).jpg\"\r\n    },{\r\n      \r\n      \"title\": \"mansion4\",\r\n      \"url\": \"https://app-g8-c10621-bucket-content.s3.us-west-1.amazonaws.com/imagenes+para+pagina/masiones/mansion+4/mansion4+(7).jpg\"\r\n    }\r\n  ],\r\n  \"cities\": {\r\n    \"id\":4\r\n  },\r\n  \"policy\": {\r\n    \"houseRules\": [\r\n        \"Check-out: 10:00\",\r\n        \"No se permiten fiestas\",\r\n        \"No fumar\"\r\n    ],\r\n    \"healthAndSecurity\": [\r\n        \"Se aplican las pautas de distanciamiento social y otras normas relacionadas con el coronavirus\",\r\n        \"Detector de humo\",\r\n        \"Depósito de seguridad\"\r\n    ],\r\n    \"cancelPolicy\": [\r\n      \"Agregá las fechas de tu viaje para obtener los detalles decancelacion de esta estadía\"\r\n    ]\r\n  },\r\n    \"scores\":[],\r\n    \"reservations\":[],\r\n    \"latitude\": 156.35,\r\n    \"longitude\": 124.36\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"save"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"  pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "CrearCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pepito\",\r\n    \"lastName\": \"perez\",\r\n    \"email\":\"pepitoperez@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/client/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Score",
+			"item": [
+				{
+					"name": "CrearScore",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":1\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":1\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":2\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":3\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":4\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":5\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":6\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":7\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":8\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":9\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":10\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":11\r\n            },\r\n    \"score\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 12",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":12\r\n            },\r\n    \"score\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 13",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":13\r\n            },\r\n    \"score\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 14",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":14\r\n            },\r\n    \"score\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 15",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":15\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearScore Copy 16",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\":16\r\n            },\r\n    \"score\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerTodosScores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/score/viewAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "CrearReservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 1\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 2\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 3\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 4\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 5\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 6\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 7\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 8\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 9\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 10\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 11\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 12\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 13\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 14\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 15\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearReservation Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 16\r\n  },\r\n  \"startDate\": \"2022-06-07\",\r\n  \"endDate\": \"2022-07-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodasLasReservasByProductoId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservation/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodasLasReservasByClientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reservation/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CrearUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Usuario Test\",\r\n    \"lastName\": \"Usuario Test\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/id/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"name\": \"Update Test\",\r\n    \"lastName\": \"Update Test\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/viewAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RequestUtils",
+			"item": [
+				{
+					"name": "BuscarProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/id/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"id",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscarAverage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/score/average/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"score",
+								"average",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodosLosProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/viewAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"viewAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log in",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"  pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}

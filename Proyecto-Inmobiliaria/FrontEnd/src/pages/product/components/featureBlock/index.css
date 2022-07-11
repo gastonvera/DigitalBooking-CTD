@@ -1,0 +1,50 @@
+.plc-features-container hr {
+  color: var(--primary);
+}
+
+.plc-features-container h2 {
+  padding: 20px 0px 15px 40px;
+}
+
+.plc-features-container p {
+  display: inline-block;
+  margin: 15px 15px 15px 30px;
+  width: 20%;
+  color: var(--color2);
+}
+
+.plc-features-container {
+  margin-bottom: 30px;
+}
+
+.plc-icon-features {
+  padding: 0px 10px;
+  width: 30px;
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1180px) {
+  .plc-features-container p {
+    width: 40%;
+
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .plc-icon-features {
+    width: 20px;
+  }
+
+  .plc-features-container h2 {
+    padding: 20px 0px 15px 10px;
+  }
+
+  .plc-features-container p {
+    margin: 10px 0px 10px 0px;
+    width: 50%;
+  }
+
+  .plc-icon-p-container{
+    padding: 0.5rem;
+  }
+}

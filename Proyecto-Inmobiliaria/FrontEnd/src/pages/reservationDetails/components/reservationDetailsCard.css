@@ -1,0 +1,164 @@
+.plc-reservation-details-card-container{
+  width: 400px;
+  min-height: 100px;
+}
+
+.plc-text-details-container{
+  width: 100%;
+  padding: 10px 5%;
+}
+
+.plc-reservation-details-card-container img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.plc-contact-container{
+  display: flex;
+}
+
+.plc-details-card-title{
+  background-color: var(--primary);
+  padding: 10px 5%;
+  color: white;
+  margin-top: -4px;
+}
+
+.plc-p-top-checks{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+.plc-reservation-details-card-container hr{
+  color: rgba(0, 0, 0, 0.3);
+  margin: 15px 0px;
+}
+
+.plc-reservation-owner .plc-rev-owner-title, .plc-details-description-title{
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.plc-reservation-owner .plc-rev-owner-data{
+  font-size: 0.95rem;
+  padding: 3px 0px;
+}
+
+.plc-span-owner-data{
+  color: var(--primary);
+}
+
+.plc-cancel-reservation-text-bottom {
+ color: rgba(0, 0, 0, 0.5); 
+}
+
+.plc-cancel-reservation-text-top, .plc-cancel-reservation-text-bottom{
+  padding-bottom: 10px;
+}
+
+.plc-cancel-reservation-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.plc-cancel-button{
+  background: var(--color2);
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 90%;
+  height: 45px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  justify-self: center;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.plc-check-date-reservation-detail-card{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.plc-div-check-hour-card{
+  text-align: center;
+}
+
+.plc-check-section-title{
+  font-size: 1.2rem;
+}
+
+.plc-check-section-title+p{
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+.plc-details-description-location{
+  font-size: 0.8rem;
+}
+
+.plc-details-description-title{
+  font-size: 1.4rem;
+}
+.plc-details-description-info{
+  font-size: 0.85rem;
+  padding-bottom: 10px;
+}
+
+.plc-reservation-details-features-container h4{
+  font-size: 1.3rem;
+}
+
+.plc-reservation-details-icon-p-container{
+  padding: 15px;
+}
+
+.plc-details-feature{
+  padding: 0px 10px;
+  width: 30px;
+  height: 20px;
+  color: var(--primary);
+}
+
+.plc-feature-deatils-p{
+  padding-top: 5px;
+  font-size: 1.2rem;
+}
+
+.plc-details-policy-container h2{
+  font-size: 1.3rem;
+}
+
+.plc-details-policy-container h3{
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.plc-details-li{
+  padding-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+@media (min-width:1650px){
+  .plc-reservation-details-card-container{
+    width: 500px;
+  }
+}
+
+@media (max-width:1320px){
+  
+  .plc-reservation-details-card-container{
+    width: 380px;
+  }
+
+
+
+ 
+
+}

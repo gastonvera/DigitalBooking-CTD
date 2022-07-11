@@ -1,0 +1,216 @@
+.unc-create-container {
+  padding: 5rem 0 4rem 0;
+  background-color: rgb(223, 228, 234, 50%);
+}
+
+.unc-create-admin {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  background: var(--primary);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.unc-icon-back {
+  font-size: 2rem;
+}
+
+.unc-create-product {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.unc-create-product .unc-create-title {
+  padding: 2rem 0;
+}
+
+/*formulario*/
+.unc-create-parr {
+  padding-top: 3rem;
+}
+
+.unc-product-container {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(223, 228, 234);
+  box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+  border-radius: 0.5rem;
+}
+
+.unc-form-product {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.unc-create-inputs {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 2.5rem;
+}
+
+.unc-create-input input,
+.unc-create-input select,
+.unc-create-input textarea {
+  background: rgb(255, 255, 255);
+  border: none;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem 0 1rem 0;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.unc-create-input textarea {
+  height: 100%;
+  resize: none;
+}
+
+
+.unc-create-icons {
+  background-color: rgb(223, 228, 234, 50%);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  padding: 1rem;
+}
+
+.unc-create-icon {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.unc-create-icons p {
+  margin-right: 1rem;
+}
+
+.unc-icons-product {
+  padding: 0.5rem;
+}
+
+.unc-create-politic {
+  display: flex;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  padding: 1rem;
+}
+
+.unc-create-politic-card {
+  width: 100%;
+  margin: 0.8rem;
+}
+
+.unc-url {
+  margin-top: 1rem;
+}
+
+.unc-create-url {
+  display: flex;
+  width: 100%;
+  grid-gap: 0.5rem;
+}
+
+.unc-create-url-span {
+  display: flex;
+  width: 100%;
+  grid-gap: 0.5rem;
+  align-items: center;
+}
+
+.unc-create-url input {
+  background: rgb(255, 255, 255);
+  border: none;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+/*buttom*/
+.unc-create-btn {
+  background: var(--color3);
+  border: none;
+  width: 3rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unc-create-submit {
+  border: none;
+  background: var(--color2);
+  color: var(--white);
+  padding: 0.6rem 0rem;
+  font-size: 1.2rem;
+  width: 300px;
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.unc-create-submit:hover {
+  background-color: var(--primary);
+}
+
+.unc-create-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.unc-create-span {
+  width: 100%;
+  word-break: break-all;
+}
+
+.unc-create-x {
+  background: var(--red);
+  padding: 0.1rem 0.4rem;
+  color: white;
+  border: 0.5re;
+  border-radius: 0.2rem;
+}
+
+.unc-create-alert{
+  background-color: var(--red);
+  color: var(--white);
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 856px) {
+  .unc-create-politic {
+    flex-direction: column;
+  }
+
+  .unc-create-politic-card {
+    margin: 0;
+  }
+
+  .unc-create-inputs {
+    grid-template-columns: 47% 47%;
+    grid-gap: 1.4rem;
+  }
+}
+
+@media (max-width: 589px) {
+  .unc-create-inputs {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+
+}

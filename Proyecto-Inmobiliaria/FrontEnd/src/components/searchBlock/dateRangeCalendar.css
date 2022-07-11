@@ -1,0 +1,156 @@
+.inputBox {
+    border-style: none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    width: 350px;
+    padding-left: 40px;
+    display: inline-block;
+    outline: none;
+  }
+  
+  .rdrMonthPicker select option,
+  .rdrYearPicker select option {
+    color: rgb(255, 255, 255);
+  }
+  
+  .rdrDateDisplay {
+    display: none;
+  }
+  
+  .calendarWrap {
+    display: block;
+    position: relative;
+  }
+  .plc-calendar-container {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 700px;
+    height: 410px;
+    top: 45px;
+    border: 1px solid #ccc;
+    z-index: 900;
+    border-radius: 0.5rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  .plc-calendar-icon {
+    z-index: 902;
+  }
+  
+  .plc-calendar-element {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 900;
+    width: 99.5%;
+    border-radius: 0.5rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  .plc-button-calendar {
+    position: absolute;
+    bottom: 10px;
+    right: 31px;
+    width: 206px;
+    height: 40px;
+    background-color: var(--color2);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 901;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+  }
+  
+  .rdrMonthAndYearPickers {
+    position: absolute;
+    left: 18px;
+    top: 62px;
+    width: 200px;
+    background-color: white;
+  }
+  
+  .rdrDateDisplayerWrapper {
+    display: none;
+  }
+  
+  .rdrMonthAndYearPickers select {
+    padding-left: 0px;
+    text-align: start;
+  }
+  @media screen and (max-width: 1240px) {
+    .plc-calendar-container {
+      right: 0;
+      width: 710px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .inputBox {
+      width: 254px;
+    }
+  
+    .plc-calendar-container {
+      right: 0;
+      width: 520px;
+    }
+  
+    .rdrMonthAndYearPickers {
+      left: 16px;
+      top: 118px;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 840px) {
+    .plc-calendar-container {
+      right: 0px;
+      width: 520px;
+    }
+  
+    .rdrMonthAndYearPickers {
+      left: 11px;
+      top: 63px;
+    }
+  }
+  
+  @media screen and (max-width: 748px) {
+    .plc-calendar-container {
+      right: 0px;
+      width: 420px;
+    }
+  }
+  
+  @media screen and (max-width: 548px) {
+    .plc-calendar-container {
+      right: 0;
+      width: 335px;
+      height: 575px;
+    }
+  
+    .plc-button-calendar{
+      right: 60px;
+    }
+  
+    .rdrMonthAndYearPickers {
+      left: 15px;
+    }
+  
+    .inputBox {
+      width: 380px;
+    }
+  }
+  

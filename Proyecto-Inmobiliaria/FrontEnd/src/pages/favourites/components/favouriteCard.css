@@ -1,0 +1,206 @@
+.plc-favourite-card-container{
+  width: 850px;
+}
+
+.plc-favourite-card-container img{
+  width: 300px;
+  height: 200px;
+  min-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.plc-favourite-hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: 0.3;
+  margin-left: 20px;
+}
+
+.plc-img-text-container-favourite{
+  display: flex;
+  margin-left: 50px;
+}
+
+.plc-text-favourite-card{
+  padding-left: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.plc-location-favourite-card{
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.plc-product-link-favorite{
+  font-size: 1.3rem;
+  color: black;
+}
+
+.plc-line-div-favourites{
+  width: 40px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: rgba(0, 0,0, 0.3);
+}
+
+.plc-div-features-favourites-card{
+  margin-top: 20px;
+  padding: 7px 10px;
+  width: 85%;
+  position: relative;
+  cursor: pointer;
+}
+
+.plc-icon-favourite-card{
+  padding: 4px 10px;
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+}
+
+.plc-star-favourites{
+  position: absolute;
+  bottom: 2px;
+}
+
+.plc-price-favourite{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+.plc-price-favourite{
+  display: flex;
+  align-items: flex-end;
+}
+
+.plc-price-favourite .plc-period{
+  opacity: 0.6;
+}
+.plc-price-favourite .plc-price{
+  font-size: 1.3rem;
+}
+
+.plc-icon-favourite-card:hover{
+  color: var(--color3);
+}
+
+.plc-icon-reservation-card::before, .plc-icon-reservation-card::after{
+  content: "";
+  /* margin-top: 95px; */
+  position: absolute;
+  transform: translate(-50%,3px);
+  visibility: hidden;
+  transition: transform 0.5s;
+  border: 0.5px solid var(--color2);
+}
+
+.plc-icon-reservation-card::before{
+  top:-10px;
+  border: 5px solid transparent;
+  border-top: 5px solid var(--white);
+}
+
+.plc-icon-reservation-card::after{
+  content: attr(data-tooltip);
+  bottom: 65px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 12px;
+  background-color: var(--white);
+}
+
+.plc-icon-reservation-card:hover::before, .plc-icon-reservation-card:hover::after{
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
+@media (max-width: 1750px) {
+  .plc-favourite-card-container{
+    width: 710px;
+  }
+
+  .plc-div-features-favourites-card{
+    margin-top: 20px;
+    padding: 7px 10px;
+    width: 90%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .plc-icon-favourite-card{
+    padding: 2px 5px;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .plc-icon-reservation-card::before{
+    top:-10px;
+  }
+  
+  .plc-icon-reservation-card::after{
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 1300px){
+  .plc-img-text-container-favourite{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 720px){
+  .plc-img-text-container-favourite{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plc-favourite-card-container{
+    width: 400px;
+    min-height: 500px;
+    margin: 20px 0px;
+  }
+  
+  .plc-favourite-card-container img{
+    width: 380px;
+    height: 300px;
+  }
+
+  .plc-img-text-container-favourite{
+    margin-left: 0px;
+  }
+
+  .plc-favourite-hr{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+    margin-left: 5px;
+  }
+
+  .plc-price-favourite, .plc-star-favourites{
+    bottom: -40px;
+
+  }
+
+  .plc-div-features-favourites-card{
+    margin-top: 5px;
+  }
+
+  .plc-icon-favourite-card{
+    padding: 2px 10px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .plc-location-favourite-card{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .plc-text-favourite-card h3{
+    font-size: 1.5rem;
+  }
+}

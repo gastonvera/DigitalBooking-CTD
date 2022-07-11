@@ -1,0 +1,110 @@
+.plc-input-text-search-block {
+    border-style: none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    width: 350px;
+    padding-left: 40px;
+    display: inline-block;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  .plc-house-input-search-display-list {
+    background-color: var(--white);
+    position: absolute;
+    border: 1px solid #f3f1ed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+    z-index: 999;
+    animation: items 0.5s ease;
+  }
+  
+  @keyframes items {
+    from {
+      height: 0rem;
+      opacity: 0;
+    }
+    to {
+      height: 23rem;
+      opacity: 1;
+    }
+  }
+  
+  .plc-house-input-search-display-list li {
+    padding-left: 10px;
+    min-height: 60px;
+  }
+  
+  .inputSearchDisplayLocationContainer div {
+    padding-left: 15px;
+    width: 100%;
+    animation: item 2s ease;
+  }
+  @keyframes item {
+    from {
+      height: 0%;
+      opacity: 0;
+    }
+    to {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+  
+  .plc-search-display-paragraph-location {
+    margin-bottom: -10px;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 25px;
+  }
+  
+  .plc-search-display-paragraph-location span {
+    color: var(--black);
+    opacity: 0.5;
+    font-size: 0.8rem;
+    pointer-events: none;
+  }
+  
+  .plc-house-input-search-display-list li hr {
+    color: var(--color-one);
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .plc-input-search-display-icon {
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .inputSearchDisplayLocationContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .plc-house-input-search-display-list {
+      width: 254px;
+    }
+  
+    .plc-input-text-search-block {
+      width: 254px;
+    }
+  }
+  
+  @media screen and (max-width: 469px) {
+    .plc-house-input-search-display-list {
+      margin-left: 0;
+      width: 375px;
+    }
+  
+    .plc-input-text-search-block {
+      width: 380px;
+    }
+  }
+  
